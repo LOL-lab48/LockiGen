@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LockiGen – Password Generator</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon PNGs -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
@@ -12,17 +17,18 @@
     <p>Generate strong passwords instantly!</p>
 
     <label for="length">Password Length:</label>
-    <input type="number" id="length" value="12" min="6" max="32">
+    <input type="number" id="length" value="12" min="6" max="32" />
 
     <div class="options">
-      <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
-      <label><input type="checkbox" id="numbers" checked> Numbers</label>
-      <label><input type="checkbox" id="symbols" checked> Symbols</label>
+      <label><input type="checkbox" id="uppercase" checked /> Uppercase</label>
+      <label><input type="checkbox" id="numbers" checked /> Numbers</label>
+      <label><input type="checkbox" id="symbols" checked /> Symbols</label>
     </div>
 
     <button id="generate">Generate Password</button>
 
     <div id="output"></div>
+
     <div id="strength">
       <div id="strength-bar"></div>
       <span id="strength-text"></span>
