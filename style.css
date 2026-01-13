@@ -1,0 +1,100 @@
+/* Reset & body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e, #162447);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  background: #0f3460;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+input[type=number] {
+  width: 60px;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: #e94560;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.1s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#output {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+#strength {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #ccc;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#strength-bar {
+  height: 100%;
+  width: 0%;
+  background-color: red;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+#strength-text {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  font-size: 12px;
+  color: #fff;
+}
+
+#copy {
+  margin-top: 10px;
+  background-color: #00adb5;
+}
